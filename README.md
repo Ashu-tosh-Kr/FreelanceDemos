@@ -15,9 +15,10 @@
 
 ## How to run
 * The file includes all the resources required to run this web-app except the **node_modules**
-* The node modules can be installed by running **npm install** in the root folder(for backend dependencies) and then inside the client folder(for react dependencies) 
-* Then the application can be run by executing **npm run dev** in the root folder. It should be up and running since I have used concurrently.
-* If there are any difficulties, please feel free to contact me.
+* The node modules can be installed by running **npm install** in the backend folder(for backend dependencies) and then inside the client folder(for react dependencies) which is directly inside the backend folder.
+* Once that is done run **node server.js** in backend folder to run the backend server on port 5000.
+* And run **npm start** in the client folder to run the react server on port 3000.
+* If the backend server is not run then everything still works. Only the files aren't uploaded. 
 
 ## Assumptions and Choices
 * The CSS was kept to a minimum, partly due to the time restraint.
