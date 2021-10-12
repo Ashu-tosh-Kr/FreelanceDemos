@@ -3,6 +3,10 @@ import { styles } from './styles';
 
 const overrides = {
   ...styles,
+  config: {
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
+  },
   components: {},
 };
 
