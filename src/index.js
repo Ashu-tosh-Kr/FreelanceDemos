@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <StrictMode>
-    <ColorModeScript />
+    <ColorModeScript initialColorMode={'dark'} />
     <Router>
       <App />
     </Router>
