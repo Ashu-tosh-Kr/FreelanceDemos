@@ -34,6 +34,7 @@ const Message = ({ src, name, text, hcolor, ...rest }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam
           eius veniam deleniti odio rem officiis, neque, adipisci consectetur
           fuga ab earum magni hic repellat atque voluptate est ex voluptas!
+          {text}
         </Text>
       </Box>
     </>
@@ -56,7 +57,7 @@ const StreamerMessage = ({ src, name, text, hcolor, ...rest }) => {
           pos="absolute"
           right="-15px"
           name="Dan Abrahmov"
-          src="https://bit.ly/code-beast"
+          src={src ? src : 'https://bit.ly/code-beast'}
           size="sm"
         >
           <AvatarBadge top="0" border="0" left="-2" boxSize="1em">
@@ -68,6 +69,7 @@ const StreamerMessage = ({ src, name, text, hcolor, ...rest }) => {
         </Text>
         <Text textStyle="info" color="blue.pbg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam
+          {text}
         </Text>
       </Box>
     </Flex>
